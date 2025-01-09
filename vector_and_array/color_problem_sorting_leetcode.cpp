@@ -1,3 +1,6 @@
+// take 3 pointer and do the sorting approch if i can sort the 0 and 2 to the left and right respectively 
+// then it automatically sort the 1 to the center that's the reason why in first else if statement i skip 1 !!
+
 // class Solution {
 // public:
 //     void sortColors(vector<int>& nums) {
