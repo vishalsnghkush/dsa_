@@ -1,6 +1,11 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+//kth rotation means swapping the element to kth index !!
+//like 1 4 6 6 3 5 
+// k=2;
+//     3 5 1 4 6 6
+
 
 // Function to reverse a portion of the array
 void reverse(vector<int>& v, int start, int end) {
