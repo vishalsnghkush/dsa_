@@ -7,6 +7,8 @@
 //         // Find the largest index l greater than k such that a[k] < a[l]...-> l=3  i.e a[l]=4
 //         // Swap the value of a[k] with that of a[l].    
 //         // Reverse the sequence from a[k + 1] up to and including the final element a[n].
+            // is me loop ko ulta chalana jadya better rahega becz it make me iletrate the less time loop
+            //
 //         int index=-1;
 //         int n=nums.size();
 //         for(int i=n-2;i>=0;i--){
