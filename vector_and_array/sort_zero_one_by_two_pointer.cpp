@@ -14,7 +14,7 @@ void sort01(vector<int>&v,int start,int end){
     }
 }
 int main(){
-    vector<int>v={0,1,1,0,1,0,1,0};
+    vector<int>v={1,1,0,1,0,1,1,0};
     int end=v.size()-1;
     sort01(v,0,end);
     for(auto i=0;i<v.size();i++){
