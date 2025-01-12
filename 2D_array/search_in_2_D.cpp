@@ -5,7 +5,7 @@
 //     int col=matrix[0].size();
 //     int i=0;
 //     int j=col-1;//last element i.e (0,4) se search krge
-//     while(i<row&&j>=0){
+//     while(i<row&&j>=0){//jab tak matrix se bahar na chala jaye
 //         if(matrix[i][j]==target) return true;
 //         else if(matrix[i][j]>target) j--;
 //         else i++;
