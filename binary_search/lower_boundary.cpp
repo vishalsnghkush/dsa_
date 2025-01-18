@@ -16,9 +16,9 @@ int lower(vector<int>&v,int target){
     }
 }
 int main(){
-    vector<int>v={4,6,10,12,18,20,30,45};
+    vector<int>v={1,2,4,5,9,15,18,21,24};
     sort(v.begin(),v.end());
-    int target=19;
+    int target=20;
     // now the vector will be like this
     // 4 6 10 12 18 20 30 45
     cout<<lower(v,target);
