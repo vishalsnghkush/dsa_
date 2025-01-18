@@ -3,10 +3,10 @@
 #include<algorithm>
 using namespace std;
 int sqrt(int n){
-    if (x == 0 || x == 1)
-    return x;
+    if (n == 0 || n == 1)
+    return n;
     int start=0;
-    int end=n;
+    int end=n/2;// here devide by two to reduce search space
     int ans=-1;
     while(start<=end){
         int mid=start+(end-start)/2;
