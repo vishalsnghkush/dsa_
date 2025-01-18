@@ -3,6 +3,8 @@
 #include<algorithm>
 using namespace std;
 int sqrt(int n){
+    if (x == 0 || x == 1)
+    return x;
     int start=0;
     int end=n;
     int ans=-1;
