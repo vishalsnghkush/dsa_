@@ -5,7 +5,8 @@
 //         int n=weights.size();
 //         int count=1;
 //         for(int i=0;i<n;i++){
-//             if(m>=weights[i]){
+//             if(m>=weights[i]){ // this implies that when current element is greater than the middle element 
+                                  // then reduce it by weight and poceded tilll it make the append the elemnt in the maximum height which is required
 //                 m-=weights[i];
 
 //             }
