@@ -5,9 +5,9 @@
 //         int n=piles.size();
 //         for(int i=0;i<n;i++){
 //             if(count>h) return false;
-//             if(speed>=piles[i]) count++;
-//             else if(piles[i]%speed==0) count+=piles[i]/speed;
-//             else count+=(piles[i]/speed+1);
+//             if(speed>=piles[i]) count++; // if speed is greater then he eat in an hour so no need of extra hour
+//             else if(piles[i]%speed==0) count+=piles[i]/speed; // if speed is less and it is divided completely then it directly divide it like  speed is 3 b/s  and piles = 6 then time is 6/3 i.e 2 hr 
+//             else count+=(piles[i]/speed+1); // if not then extra hour is needed to eat
 //         }
 //         if(count>h) return false;
 //         else return true;
