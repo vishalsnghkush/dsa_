@@ -8,7 +8,7 @@ void permutation(string ans,string original){
     for(int i=0;i<original.length();i++){
         char ch=original[0];
         string left=original.substr(0,i);
-        string right=original.substr(0,i+1);
+        string right=original.substr(i+1);
         permutation(ans+ch,left+right);
     }
 }
