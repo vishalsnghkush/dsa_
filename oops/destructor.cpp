@@ -1,5 +1,5 @@
 #include <iostream>
-
+// scorpe se bahatr jayega turant he call hoga
 class MyClass {
 public:
     // Constructor
