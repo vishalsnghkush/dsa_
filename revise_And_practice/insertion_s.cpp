@@ -4,17 +4,16 @@ using namespace std;
 int main(){
     int arr[]={7,5,4,3,2,1,4};
     int n=sizeof(arr)/sizeof(arr[0]);
-    // is me smallest ko last me le jaye jata hai
-    for(int i=0;i<n;i++){
-        int indx=i;
-        for(int j=i+1;j<n;j++){
-            if(arr[j]<arr[indx]){
-                indx=j;
+    for(int i=1;i<n;i++){
+        int j=i;
+        while(j>=1){
+            if(arr[j]>arr[j-1]) break;
+            else{
+                swap(arr[j],arr[j-1]);
             }
-            swap(arr[i],arr[indx]);
+            j--;
         }
     }
-    // priting
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }

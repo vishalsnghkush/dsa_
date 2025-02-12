@@ -11,13 +11,8 @@ int main(){
             }
         }
     }
-    // priting
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
     return 0;
 }
-// is me bubble jaise sort hota jayega 
-// like the if soap is dissolved then it formed bubble and go
-// form the up to up...............//
-// so on ........
