@@ -1,3 +1,5 @@
+//only root tree ka address given hoga
+
 #include<iostream>
 using namespace std;
 class Node{ //this is tree node
@@ -11,7 +13,12 @@ Node(int val){
     this->right=NULL;
 }   
 };
-
+void displayTree(Node *root){
+    if(root==NULL) return;
+    cout<<root->val<<" ";
+    displayTree(root->left);
+    displayTree(root->right);
+}
 int main(){
     Node *a=new Node(1);
     Node *b=new Node(2);
@@ -26,5 +33,6 @@ int main(){
     b->right=e;
     c->left=f;
     c->right=g;
+    displayTree(a);
     return 0;
 }
