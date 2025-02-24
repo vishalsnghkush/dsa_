@@ -19,6 +19,14 @@ void displayTree(Node *root){
     displayTree(root->left);
     displayTree(root->right);
 }
+
+void displayTree1(Node *root){
+    if(root==NULL) return;
+    cout<<root->val<<" ";
+    
+    displayTree1(root->right);
+    displayTree1(root->left);
+}
 int main(){
     Node *a=new Node(1);
     Node *b=new Node(2);
@@ -33,6 +41,8 @@ int main(){
     b->right=e;
     c->left=f;
     c->right=g;
-    displayTree(a);
+    displayTree(a); 
+    cout<<endl;
+    displayTree1(a);
     return 0;
 }
