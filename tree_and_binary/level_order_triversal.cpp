@@ -12,7 +12,10 @@ Node(int val){
     this->right=NULL;
 }   
 };
-
+int level(Node *root){
+    if(root==NULL) return 0;
+    return 1 + max(level(root->left),level(root->right));
+}
 void nth_level(Node *root,int curr,int level){
     if(root==NULL) return;
     if(curr==level){
@@ -21,6 +24,13 @@ void nth_level(Node *root,int curr,int level){
     }
     nth_level(root->left,curr+1,level);
     nth_level(root->right,curr+1,level);
+}
+void levelorder(Node *root){
+    int n=level(root);
+    for(int i=1;i<=n;i++){
+        nth_level(root,1,i);
+        cout<<endl;
+    }
 }
 int main(){
     Node *a=new Node(1);
@@ -36,7 +46,7 @@ int main(){
     b->right=e;
     c->left=f;
     c->right=g;
-    nth_level(a,1,3); 
+    levelorder(a); 
     
     return 0;
 }
