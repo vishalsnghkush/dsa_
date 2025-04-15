@@ -46,7 +46,7 @@ class Doctor{
     int ID;
     Doctor(string name,int age,string gender){
         ID=docID;
-        patID++;
+        docID++;
         this->age=age;
         this->gender=gender;
         this->name=name;
@@ -161,8 +161,8 @@ void viewDoctor(){
 void viewAppointment(){
     for(int i=0;i<allAppointments.size();i++){
         cout<<"Patient Id :-> "<<allAppointments[i].patientID<<
-        "has appointed with Doctor Id ->"<<allAppointments[i].DoctorID<<
-        "on Date -> "<<allAppointments[i].Date<<endl;
+        "  has appointed with Doctor Id ->"<<allAppointments[i].DoctorID<<
+        "   on Date -> "<<allAppointments[i].Date<<endl;
     }
     cout<<endl;
     cout<<endl;
@@ -174,6 +174,7 @@ int main(){
     patID=1;
     docID=1;
     int choice;
+    cout<<"Hey Vishal let's Start !! :"<<endl;
     do{
         cout<<" 1. Add patient "<<endl; 
         cout<<" 2. Add Doctor  "<<endl;
