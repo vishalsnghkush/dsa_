@@ -39,30 +39,19 @@ MinHeap(){
             indx--;
             arr[1] = arr[indx]; // Replace root with last element
             int i = 1;
-            while(true){
-                int left=2*i,right=2*i+1;
-                if(left>indx-1) break;
-                if(right>indx-1){
-                    if(arr[i]>arr[left]){
-                        swap(arr[i], arr[left]);
-                        i = left; // Move down to left child
-                    }
-                    else break;
-                }
-                else { // Both children
-                    if (arr[left] < arr[right] && arr[left] < arr[i]) {
-                        swap(arr[i], arr[left]);
-                        i = left; // Move down to left child
-                    }
-                    else if (arr[right] < arr[left] && arr[right] < arr[i]) {
-                        swap(arr[i], arr[right]);
-                        i = right; // Move down to right child
-                    } 
-                    else {
-                        break; // Heap property satisfied
-                    }
-                }
+            // heapify algorithm
+            while (true) {
+                int left = 2 * i, right = 2 * i + 1, smallest = i;
+        
+                if (left < indx && arr[left] < arr[smallest]) smallest = left;
+                if (right < indx && arr[right] < arr[smallest]) smallest = right;
+        
+                if (smallest != i) {
+                    swap(arr[i], arr[smallest]);
+                    i = smallest;
+                } else break;
             }
+        
         }
     };
     
